@@ -63,6 +63,13 @@ app.get("/", (req, res) => {
 app.get("/hostel1.html", (req, res) => {
   res.sendFile(__dirname + "/hostel1.html");
 });
+
+
+
+
+app.get("/verification-form.html", (req, res) => {
+  res.sendFile(__dirname + "/verification-form.html");
+});
 // Start the server
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
