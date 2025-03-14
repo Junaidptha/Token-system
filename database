@@ -1,9 +1,0 @@
-create hostel_feedback;
-USE hostel_feedback;
-
-CREATE TABLE feedbacks (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL DEFAULT 'Anonymous',  -- Name of the person submitting feedback
-  feedback TEXT NOT NULL,                          -- The feedback content
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP  -- Timestamp when the feedback was created
-);
